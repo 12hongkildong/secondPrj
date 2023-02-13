@@ -1,0 +1,11 @@
+.grid-box{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 35px 65px;
+    column-gap: 20px;
+    
+
+}
+    .grid-box:nth-child(1){
+
+    }

@@ -1,0 +1,56 @@
+
+body{
+    padding: 0px 8px;
+}
+section{
+    border-radius: 5%;
+}
+
+/* Frame */
+
+.grid-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, 1fr) repeat(5, auto);
+    grid-row-gap: 16px;
+    height: 100%;
+}
+.profile{
+    background-color: bisque;
+}
+    .screen-resizing-btn{
+        width: 0px;
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .resizing{
+        width: 0px;
+        height: 0px;
+    }
+    .screen-resizing-btn:checked ~.resizing{
+        width: 500px;
+        height: 500px;;
+    }
+
+.font{
+    background-color: red;
+}
+
+.alarm{
+    background-color: blue;
+}
+
+.export{
+    background-color: red;
+}
+
+.customer-service{
+    background-color: blue;
+}
+
+.logout-quit{
+    background-color: red;
+}
+
+/*  */
