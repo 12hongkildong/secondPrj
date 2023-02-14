@@ -9,3 +9,37 @@
     .grid-box:nth-child(1){
 
     }
+
+/* 자동키 원본 */
+    .sidebar-btn {
+        /* width: 0px;
+        height: 0px;
+        padding: 0px;
+        margin: 0px; */
+    }
+    .sidebar {
+        background-color: red;
+    }
+    
+    .sidebar-btn:checked ~ .sidebar {
+        background-color: rebeccapurple;
+        width: 1000px;
+        height: 100px;
+    }
+
+/* 자동키 내맴 */
+#sidebar-btn2 {
+    width: 0px;
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar {
+    background-color: red;
+}
+
+#sidebar-btn2:checked ~ .sidebar {
+    background-color: rebeccapurple;
+    width: 1000px;
+    height: 100px;
+}

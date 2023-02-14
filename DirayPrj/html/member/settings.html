@@ -16,11 +16,10 @@
     </header>
 
     <section class="grid-box">
-        <section class="profile">
+        <section class="profile r-style">
             <h1>프로필 설정</h1>
-            <input type="checkbox" name="" class="screen-resizing-btn">
-            
-            <label class="screen-btn" for="resizing">화면펼치기버튼</label>
+            <input class="box-resizing-btn" type="checkbox">
+            <label class="on-off" for="box-resizing-btn">버튼</label>
             <div class="resizing">
                 <form action="">
                     <fieldset>
@@ -35,87 +34,101 @@
                         <label for="">상태메시지</label>
                         <input type="text">
                         <input type="submit" value="저장">
-
                     </fieldset>
                 </form>
             </div>
         </section>
 
-        <section class="font">
+        <section class="font r-style">
             <h1>폰트</h1>
-            <div>화면펼치기버튼</div>
-            <section>
+            <input class="box-resizing-btn" type="checkbox">
+            <label class="on-off" for="box-resizing-btn">버튼</label>
+            <div class="resizing">
                 <section>
-                    <h1>미리보기</h1>
-                    <div>폰트변경사항 확인하는 칸</div>
+                    <section>
+                        <h1>미리보기</h1>
+                        <div>폰트변경사항 확인하는 칸</div>
+                    </section>
+                    <section>
+                        <h1>글꼴</h1>
+                        <ul>
+                            <li>돋움</li>
+                            <li>굴림</li>
+                            <li>궁서</li>
+                            <li>바탕</li>
+                        </ul>
+                        <h1>크기</h1>
+                        <input type="range" name="" id="">
+                    </section>
+                        <input type="button" value="적용">
+                        <input type="reset" value="초기화">
                 </section>
-                <section>
-                    <h1>글꼴</h1>
-                    <ul>
-                        <li>돋움</li>
-                        <li>굴림</li>
-                        <li>궁서</li>
-                        <li>바탕</li>
-                    </ul>
-                    <h1>크기</h1>
-                    <input type="range" name="" id="">
-                </section>
-                    <input type="button" value="적용">
-                    <input type="reset" value="초기화">
-            </section>
+            </div>
         </section>
 
-        <section class="alarm">
+        <section class="alarm r-style">
             <h1>알림 설정</h1>
-            <div>화면펼치기버튼</div>
-            <label for="all-option">전체 끄기/켜기</label>
-            <input type="checkbox" name="all-option" id="">끄기/켜기
-            <label for="vibration-option">진동 끄기/켜기</label>
-            <input type="checkbox" name="vibration-option" id="">끄기/켜기
-            <div>
-                <label for="">방해 금지 시간</label>
-                <input type="time" name="" id="">
-            </div>
-            <div>
-                <label for="">일기 작성 알림</label>
-                <input type="time" name="" id="">
+            <input class="box-resizing-btn" type="checkbox">
+            <label class="on-off" for="box-resizing-btn">버튼</label>
+            <div class="resizing">
+                <label for="all-option">전체 끄기/켜기</label>
+                <input type="checkbox" name="all-option" id="">끄기/켜기
+                <label for="vibration-option">진동 끄기/켜기</label>
+                <input type="checkbox" name="vibration-option" id="">끄기/켜기
+                <div>
+                    <label for="">방해 금지 시간</label>
+                    <input type="time" name="" id="">
+                </div>
+                <div>
+                    <label for="">일기 작성 알림</label>
+                    <input type="time" name="" id="">
+                </div>
             </div>
         </section>
 
-        <section class="export">
+        <section class="export r-style">
             <h1>내보내기</h1>
-            <div>화면펼치기버튼</div>
-            <ul>
-                <li>이메일로 내보내기</li>
-                <li>PDF로 내보내기</li>
-            </ul>
+            <input class="box-resizing-btn" type="checkbox">
+            <label class="on-off" for="box-resizing-btn">버튼</label>
+            <div class="resizing">
+                <ul>
+                    <li>이메일로 내보내기</li>
+                    <li>PDF로 내보내기</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="customer-service">
+        <section class="customer-service r-style">
             <h1>피드백</h1>
-            <div>화면펼치기버튼</div>
-            <fieldset>
-                <legend>고객센터</legend>
-                <label for="">문의</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="문의사항을 적어주세요"></textarea>
-                <input type="radio" name="error-chocie" id="">
-                <label for="error-chocie">버그</label>
-                <input type="radio" name="error-chocie" id="">
-                <label for="error-chocie">기능</label>
-                <input type="radio" name="error-chocie" id="">
-                <label for="error-chocie">기타</label>
-                <input type="email" placeholder="이메일을 입력해주세요.">
-                <input type="submit" value="제출">
-            </fieldset>
+            <input class="box-resizing-btn" type="checkbox">
+            <label class="on-off" for="box-resizing-btn">버튼</label>
+            <div class="resizing">
+                <fieldset>
+                    <legend>고객센터</legend>
+                    <label for="">문의</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="문의사항을 적어주세요"></textarea>
+                    <input type="radio" name="error-chocie" id="">
+                    <label for="error-chocie">버그</label>
+                    <input type="radio" name="error-chocie" id="">
+                    <label for="error-chocie">기능</label>
+                    <input type="radio" name="error-chocie" id="">
+                    <label for="error-chocie">기타</label>
+                    <input type="email" placeholder="이메일을 입력해주세요.">
+                    <input type="submit" value="제출">
+                </fieldset>
+            </div>
         </section>
 
-        <section class="logout-quit">
+        <section class="logout-quit r-style">
             <h1>로그아웃 / 회원탈퇴</h1>
-            <div>화면펼치기버튼</div>
+            <input class="box-resizing-btn" type="checkbox">
+            <label class="on-off" for="box-resizing-btn">버튼</label>
+            <div class="resizing">
                 <div>로그아웃</div>
                 <section>
                     <h1>회원탈퇴</h1>
                 </section>
+            </div>
         </section>
     </section>
 
