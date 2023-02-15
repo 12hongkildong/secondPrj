@@ -16,22 +16,25 @@ section{
 
 /*박스 체크박스 누르면 크기 커지게 만드는 것*/
 .box-resizing-btn{
-    width: 1px;
-    height: 1px;
+    width: 50px;
+    height: 50px;
     padding: 0px;
     margin: 0px;
 }
 .resizing{
-    height: 10px;
+    height: auto;
+    width: auto;
     transition-duration: 2s;
 
 }
-.box-resizing-btn:checked ~ .resizing{
+.box-resizing-btn:focus ~ .resizing{
     width: minmax(50px, auto);
     height: 300px;
     transition-duration: 2s;
     transition-property: height, background-image;
 }
+
+
 
 /* 박스 애니메이션 or 트랜젝션 -> 스르륵*/
 
@@ -52,13 +55,22 @@ section{
         background-image: url("../../../img/arrow.svg");/*url("data:image/svg+xml,%3Csvg width='31' height='40' viewBox='0 0 31 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 35.0942L18.8688 19.8834L0 4.6726L5.80894 0L30.5279 19.8834L5.80894 39.7669L0 35.0942Z' fill='%2369BC80'/%3E%3C/svg%3E%0A");*/
         background-repeat: no-repeat;
         display: grid;
-        grid-template: 
-        "1 2 3"
-        "4 4 4";
-
+        grid-template-areas: 
+            "btn title" 
+            "main main " ;
+        grid-template-columns: minmax(300px,auto) 1fr;
+        grid-template-rows: auto 1fr;
     }
-        .profile resizing{
-
+        /* item layout */
+        .profile .box-resizing-btn{
+            /* grid-column: 7; */
+            grid-area: btn;
+        }
+        .profile form {
+            display: flex;
+            flex-direction:column;
+            grid-area: main;
+            background-color: red;
         }
 
     .font{

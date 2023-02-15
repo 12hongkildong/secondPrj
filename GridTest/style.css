@@ -1,3 +1,28 @@
+/* 테스트 */
+
+
+.srl-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar {
+    background-color: red;
+}
+
+.srl-btn:focus ~ .sidebar {
+    background-color: rebeccapurple;
+    width: 1000px;
+    height: 100px;
+}
+
+
+
+
+
+
+/*  */
 .grid-box{
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -36,10 +61,14 @@
 }
 .sidebar {
     background-color: red;
+    height: 10px;
+    transition-duration: 2s;
 }
 
-#sidebar-btn2:checked ~ .sidebar {
+#sidebar-btn2:active ~ .sidebar {
     background-color: rebeccapurple;
     width: 1000px;
     height: 100px;
+    transition-duration: 2s;
+    transition-property: height;
 }
