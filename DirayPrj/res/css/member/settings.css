@@ -20,11 +20,12 @@ section{
     grid-template: 
     "btn title" auto
     "main main" 1fr
-    / minmax(5vw, auto) 1fr;
+    / 13vw 1fr;
 }
 .on-off{
-    grid-area: btn;
+    grid-area: btn;    
 }
+
 /* 기능 */
 .box-resizing-btn{
     width: 0px;
@@ -35,17 +36,32 @@ section{
 
 .resizing{
     width: 100vw;
-    height: 0px;
+    height: 0;
     transition-duration: 2s;
+}
+
+.on-off{
+    width: 15vw;
+    height: 60px; 
+    transition: 2s;
 }
 
 .box-resizing-btn:checked ~ .resizing{
     width: 100vw;
-    /* height: 300px; */
-    height: auto;
+    height: 100%;                
     transition-duration: 2s;
     transition-property: height;
 }
+.box-resizing-btn:checked ~ .on-off{
+    background-image: url("data:image/svg+xml,%3Csvg width='31' height='40' viewBox='0 0 31 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 35.0942L18.8688 19.8834L0 4.67261L5.80894 0L30.5279 19.8834L5.80894 39.7669L0 35.0942Z' fill='%2369BC80'/%3E%3C/svg%3E%0A") rotage(90deg);
+    rotate :90deg;
+    width: 15vw;
+    height: 60px;
+    transition-duration: 1s;
+
+}
+
+
 
 /* 꾸미기 */
 .r-style{
@@ -53,12 +69,16 @@ section{
     box-shadow: 0px 4px 4px rgba(0, 4, 4, 0.1);
     border-radius: 10px;
 }
-
-.on-off{
-    /* visibility: hidden; */
+.on-off-btn{
+    display: inline-block;
     background-image: url("data:image/svg+xml,%3Csvg width='31' height='40' viewBox='0 0 31 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 35.0942L18.8688 19.8834L0 4.67261L5.80894 0L30.5279 19.8834L5.80894 39.7669L0 35.0942Z' fill='%2369BC80'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
+    background-position: center;
+    width: 15vw;
+    height: 60px; 
+    text-indent:-999px;
 }
+
 
 
 
