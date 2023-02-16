@@ -1,0 +1,28 @@
+/* 테스트 */
+
+
+.srl-btn {
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar {
+    background-color: red;
+    margin-left: ;
+    width: 100vw;
+    height: 5vh;
+    transition: 2s;
+    transition-property: height;
+}
+
+.srl-btn:checked ~ .sidebar {
+    background-color: rebeccapurple;
+    width: 1000px;
+    height: 100px;
+    transition: 2s;
+    transition-property: height;
+}
+
+
+
